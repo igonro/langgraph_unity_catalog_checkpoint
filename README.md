@@ -35,18 +35,31 @@ All implementations use Databricks Unity Catalog Delta tables via the WorkspaceC
 - Databricks workspace with Unity Catalog enabled
 - SQL warehouse with appropriate permissions
 
-### Install Dependencies
+### Install from PyPI
+
+The easiest way to install is from PyPI:
 
 ```bash
-pip install databricks-sdk langchain langgraph langmem databricks-langchain
+pip install langgraph-unity-catalog-checkpoint
 ```
 
-### Install Package
+This will automatically install all required dependencies including:
+- `databricks-sdk`
+- `langchain`
+- `langgraph`
+- `langmem`
+- `databricks-langchain`
+
+### Install from Source
+
+For development or to get the latest unreleased features:
 
 ```bash
-# From source
+# Clone the repository
 git clone https://github.com/natefleming/langgraph_unity_catalog_checkpoint.git
 cd langgraph_unity_catalog_checkpoint
+
+# Install in editable mode
 pip install -e .
 
 # Or with development dependencies
