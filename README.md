@@ -47,8 +47,7 @@ This will automatically install all required dependencies including:
 - `databricks-sdk`
 - `langchain`
 - `langgraph`
-- `langmem`
-- `databricks-langchain`
+- `loguru`
 
 ### Install from Source
 
